@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Respiratory Devices | DME Supply USA</title>
+<meta name="description" content="Affordable respiratory equipment at DME Supply USA: nebulizers, oxygen supplies, suction equipment and respiratory accessories for children and adults.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16191d;--ink2:#3c434b;--muted:#6b737c;--faint:#959ca4;
+  --tile:#f3f4f6;--tile2:#eceef1;--line:#e3e6ea;--line2:#d4d8dd;
+  --brand:#0a6fb8;--brand-h:#085e9c;--navy:#0b2a44;--teal:#00838a;--orange:#c4590f;--green:#4c8a27;
+  --blue:#0077c0;--blue-t:#e6f2fb;--teal2:#00a3a3;--teal-t:#e2f5f4;--grn:#5fa832;--grn-t:#edf6e5;--org:#f07818;--org-t:#fef0e4;--ease:cubic-bezier(.25,.1,.25,1);--out:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:'Inter Tight',-apple-system,'Helvetica Neue',sans-serif;color:var(--ink);background:#fff;font-size:15px;line-height:1.5;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input,select{font:inherit;color:inherit;letter-spacing:inherit}
+button{cursor:pointer;background:none;border:0}
+.wrap{max-width:1400px;margin:0 auto;padding:0 32px}
+
+/* utility */
+.stripe{height:4px;background:linear-gradient(90deg,var(--blue) 0 25%,var(--teal2) 25% 50%,var(--grn) 50% 75%,var(--org) 75%)}
+.util{border-bottom:1px solid var(--line);background:var(--blue-t);font-size:12.5px;color:var(--muted)}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;height:36px;gap:20px}
+.util a:hover{color:var(--ink)}
+.util .l{display:flex;gap:18px;align-items:center}
+.util .l b{color:var(--ink);font-weight:600}
+.util .r{display:flex;gap:20px}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.hdr.sh{box-shadow:0 6px 24px -12px rgba(0,0,0,.15)}
+.hdr .wrap{display:flex;align-items:center;gap:36px;height:68px}
+.logo img{height:34px;width:auto}
+.nav{display:flex;gap:4px;height:100%}
+.nav>li{list-style:none;position:static;display:flex}
+.nav>li>a{display:flex;align-items:center;padding:0 12px;font-size:14px;font-weight:500;color:var(--ink2);position:relative;white-space:nowrap}
+.nav>li>a::after{content:"";position:absolute;left:12px;right:12px;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:var(--nc,var(--blue));transform:scaleX(0);transition:transform .35s var(--out)}
+.nav>li:hover>a,.nav>li.on>a{color:var(--ink)}
+.nav>li:hover>a::after,.nav>li.on>a::after{transform:scaleX(1)}
+.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 30px 40px -30px rgba(0,0,0,.2);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.3s var(--out);pointer-events:none}
+.nav>li:hover .mega{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition-delay:.08s}
+.mega .wrap{height:auto;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:40px;padding-top:34px;padding-bottom:40px;align-items:start}
+.mega h6{font-size:12px;color:var(--faint);font-weight:500;margin-bottom:12px}
+.mega ul{list-style:none;display:grid;gap:9px}
+.mega ul a{font-size:17px;font-weight:500;color:var(--ink);transition:color .2s}
+.mega ul a:hover{color:var(--brand)}
+.mega .ft{background:var(--tile);border-radius:16px;display:flex;gap:18px;align-items:center;padding:18px}
+.mega .ft img{width:110px;height:110px;object-fit:contain;mix-blend-mode:multiply;flex:none}
+.mega .ft small{font-size:12px;color:var(--orange);font-weight:600}
+.mega .ft b{display:block;font-size:16px;font-weight:600;margin:3px 0 6px;line-height:1.3}
+.hsearch{margin-left:auto;display:flex;align-items:center;gap:10px;background:var(--tile);border-radius:999px;padding:0 16px;height:42px;width:300px;color:var(--muted);transition:.3s var(--out);border:1px solid transparent}
+.hsearch:hover{background:var(--tile2)}
+.hsearch:focus-within{background:#fff;border-color:var(--line2);width:360px}
+.hsearch input{border:0;background:none;outline:0;flex:1;min-width:0;font-size:14px;color:var(--ink)}
+.icons{display:flex;gap:2px}
+.ib{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:var(--ink2);position:relative;transition:background .2s}
+.ib:hover{background:var(--tile)}
+.ib .n{position:absolute;top:4px;right:2px;min-width:17px;height:17px;border-radius:9px;background:var(--brand);color:#fff;font-size:10.5px;font-weight:600;display:grid;place-items:center;padding:0 4px;transform:scale(0);transition:transform .4s var(--out)}
+.ib .n.on{transform:scale(1)}
+.ib.pop{animation:popb .45s var(--out)}
+@keyframes popb{40%{transform:scale(1.2)}}
+.burger{display:none}
+.sbtn{display:none!important}
+.sdrop{position:absolute;top:calc(100% + 8px);right:0;width:420px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 50px -20px rgba(0,0,0,.25);padding:10px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:.25s var(--out)}
+.sdrop.on{opacity:1;visibility:visible;transform:none}
+.sdrop a{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:12px;font-size:13.5px}
+.sdrop a:hover,.sdrop a.hl{background:var(--tile)}
+.sdrop img{width:40px;height:40px;object-fit:contain;mix-blend-mode:multiply;background:var(--tile);border-radius:8px}
+.sdrop .p{margin-left:auto;color:var(--muted);font-size:13px;white-space:nowrap}
+.sdrop .lb{font-size:11.5px;color:var(--faint);padding:6px 10px 4px}
+.sdrop mark{background:none;color:var(--brand);font-weight:600}
+
+/* intro */
+.intro{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:44px 0 72px;align-items:stretch}
+.crumb{font-size:12.5px;color:var(--faint);display:flex;gap:8px}
+.crumb a:hover{color:var(--ink)}
+.intro h1{font-size:clamp(44px,5.2vw,72px);font-weight:600;letter-spacing:-.045em;line-height:1;margin:22px 0 18px}
+.intro h1 span{display:block;font-weight:300;background:linear-gradient(90deg,var(--blue),var(--teal2) 45%,var(--grn) 75%,var(--org));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.intro .lead{font-size:17px;color:var(--ink2);max-width:470px;line-height:1.55}
+.sublist{list-style:none;margin-top:34px;border-top:1px solid var(--line)}
+.sublist a{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:500;transition:padding .4s var(--out),color .2s}
+.sublist a .ix{font-size:12px;color:var(--faint);width:22px}
+.sublist a .ar{margin-left:auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--ct);color:var(--cc);transition:.4s var(--out)}
+.sublist a .ix{display:inline-grid;place-items:center;width:26px!important;height:26px;border-radius:8px;background:var(--cc);color:#fff!important;font-weight:600;font-size:11px!important}
+.sublist a:hover{padding-left:8px;color:var(--cc)}
+.sublist a:hover .ar{background:var(--cc);color:#fff;transform:rotate(-45deg)}
+.introL{display:flex;flex-direction:column}
+.introL .help-mini{margin-top:auto;padding-top:26px;display:flex;align-items:center;gap:14px;font-size:13.5px;color:var(--muted)}
+.introL .help-mini b{color:var(--ink);font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:#3bb273;box-shadow:0 0 0 0 rgba(59,178,115,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(59,178,115,0)}100%{box-shadow:0 0 0 0 rgba(59,178,115,0)}}
+
+.bento{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:16px;min-height:560px}
+.ft-tile{position:relative;background:var(--ct,var(--tile));border-radius:24px;overflow:hidden;display:flex;flex-direction:column;padding:26px;cursor:pointer;transition:background .4s}
+.ft-tile:hover{filter:saturate(1.25) brightness(.985)}
+.ft-tile::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--cc);opacity:.10;right:-70px;top:-70px;transition:transform 1s var(--out)}
+.ft-tile:hover::before{transform:scale(1.25)}
+.ft-tile.big{grid-row:1/3;padding:32px}
+.ft-tile .lbl{display:flex;gap:10px;font-size:12px;font-weight:600}
+.lbl .o{color:var(--orange)}.lbl .t{color:var(--teal)}
+.ft-tile h3{font-size:17px;font-weight:600;letter-spacing:-.02em;line-height:1.25;margin-top:6px;max-width:260px}
+.ft-tile.big h3{font-size:26px;letter-spacing:-.03em;max-width:340px}
+.ft-tile .pr{font-size:15px;color:var(--ink2);margin-top:6px}
+.ft-tile .im{flex:1;display:grid;place-items:center;min-height:0;padding:10px}
+.ft-tile .im img{max-height:100%;max-width:100%;object-fit:contain;mix-blend-mode:multiply;transition:transform 1.1s var(--out)}
+.ft-tile.big .im img{max-height:340px}
+.ft-tile.sm .im img{max-height:140px}
+.ft-tile:hover .im img{transform:scale(1.06)}
+.ft-tile .go{position:absolute;right:20px;bottom:20px;height:40px;border-radius:999px;background:#fff;display:flex;align-items:center;gap:8px;padding:0 6px 0 16px;font-size:13.5px;font-weight:500;box-shadow:0 4px 14px -6px rgba(0,0,0,.2);transition:.4s var(--out)}
+.ft-tile .go i{width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;transition:.4s var(--out)}
+.ft-tile:hover .go i{background:var(--cc);transform:rotate(-45deg)}
+.ft-tile.sm .go{padding:0;width:40px;justify-content:center}
+.ft-tile.sm .go span{display:none}
+.ft-tile.sm .go i{width:40px;height:40px;background:#fff;color:var(--ink)}
+.ft-tile.sm:hover .go i{background:var(--cc);color:#fff}
+
+/* shop */
+.shop-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;border-top:1px solid var(--line);padding-top:36px;margin-bottom:28px}
+.shop-head h2{font-size:34px;font-weight:600;letter-spacing:-.035em}
+.shop-head h2 sup{font-size:13px;color:#fff;background:var(--blue);padding:3px 9px;border-radius:999px;font-weight:500;vertical-align:top;margin-left:6px;letter-spacing:0}
+.shop{display:grid;grid-template-columns:250px 1fr;gap:48px;align-items:start;padding-bottom:40px}
+.side{position:sticky;top:96px;max-height:calc(100vh - 116px);overflow:auto;padding-right:8px;scrollbar-width:thin}
+.sg{border-bottom:1px solid var(--line);padding:18px 0}
+.sg:first-child{padding-top:0}
+.sg>button{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600}
+.sg>button svg{transition:transform .35s var(--out)}
+.sg.closed>button svg{transform:rotate(-90deg)}
+.sg .bd{display:grid;grid-template-rows:1fr;transition:grid-template-rows .45s var(--out)}
+.sg.closed .bd{grid-template-rows:0fr}
+.sg .bd>div{overflow:hidden}
+.sg .in{padding-top:14px}
+.clist{display:grid;gap:2px}
+.clist button{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:7px 10px;margin:0 -10px;border-radius:9px;font-size:14px;color:var(--ink2);transition:.2s}
+.clist button:hover{background:var(--tile);color:var(--ink)}
+.clist button::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cc);margin-right:10px;flex:none}
+.clist button{justify-content:flex-start!important}.clist button span{margin-left:auto}
+.clist button.on{background:var(--ct);color:var(--ink);font-weight:600;box-shadow:inset 3px 0 0 var(--cc)}
+.pv{display:flex;gap:8px;margin-bottom:14px}
+.pv label{flex:1;position:relative}
+.pv span{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--faint);font-size:13px}
+.pv input{width:100%;border:1px solid var(--line2);border-radius:10px;padding:8px 8px 8px 22px;font-size:13.5px;outline:0;-moz-appearance:textfield}
+.pv input::-webkit-inner-spin-button{-webkit-appearance:none}
+.pv input:focus{border-color:var(--ink)}
+.range{position:relative;height:24px}
+.range input{position:absolute;inset:0;width:100%;pointer-events:none;-webkit-appearance:none;appearance:none;background:none}
+.range input::-webkit-slider-thumb{pointer-events:auto;-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#fff;border:1px solid var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.18);cursor:pointer;margin-top:-8px}
+.range input::-moz-range-thumb{pointer-events:auto;width:20px;height:20px;border-radius:50%;background:#fff;border:1px solid var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.18);cursor:pointer}
+.range .tr{position:absolute;left:0;right:0;top:10px;height:3px;border-radius:2px;background:var(--line)}
+.range .fl{position:absolute;top:10px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--teal2),var(--blue))}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.presets button{border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px;color:var(--ink2);transition:.2s}
+.presets button:nth-child(1){background:var(--teal-t)}.presets button:nth-child(2){background:var(--blue-t)}.presets button:nth-child(3){background:var(--grn-t)}.presets button:nth-child(4){background:var(--org-t)}
+.presets button{border-color:transparent!important}.presets button:hover{color:var(--ink);filter:saturate(1.6)}
+.mlist{display:grid;gap:1px}
+.mlist label{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:13.5px;color:var(--ink2);cursor:pointer}
+.mlist label:hover{color:var(--ink)}
+.mlist input{appearance:none;-webkit-appearance:none;width:17px;height:17px;border-radius:5px;border:1.5px solid var(--line2);display:grid;place-items:center;transition:.2s;flex:none}
+.mlist input:checked{background:var(--blue);border-color:var(--blue)}
+.mlist input:checked::after{content:"";width:4px;height:8px;border:solid #fff;border-width:0 1.8px 1.8px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.mlist em{margin-left:auto;font-style:normal;font-size:12px;color:var(--faint)}
+.mlist label.hid{display:none}
+.more-m{font-size:13px;font-weight:500;color:var(--brand);margin-top:8px}
+.side .note{font-size:12.5px;color:var(--muted);padding-top:18px;line-height:1.55}
+.side .note a{color:var(--brand)}
+
+.tbar{display:flex;align-items:center;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-right:auto;min-height:34px;align-items:center}
+.chips .lbl{font-size:13.5px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid transparent;background:var(--ct,var(--blue-t));border-radius:999px;padding:5px 6px 5px 12px;font-size:13px;animation:fi .35s var(--out)}
+.chip button{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;color:var(--muted)}
+.chip button:hover{background:var(--ink);color:#fff}
+.clr{font-size:13px;color:var(--brand);font-weight:500}
+@keyframes fi{from{opacity:0;transform:scale(.9)}}
+.selw select{appearance:none;-webkit-appearance:none;border:1px solid var(--line2);border-radius:999px;padding:8px 34px 8px 14px;font-size:13.5px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2316191d' stroke-width='1.4' fill='none'/%3E%3C/svg%3E") no-repeat right 13px center;cursor:pointer}
+.dens{display:flex;border:1px solid var(--line2);border-radius:999px;padding:3px}
+.dens button{width:32px;height:28px;border-radius:999px;display:grid;place-items:center;color:var(--faint);transition:.25s}
+.dens button.on{background:var(--blue);color:#fff}
+.fopen{display:none;align-items:center;gap:8px;border:1px solid var(--line2);border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:500}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 20px}
+.grid.d2{grid-template-columns:repeat(2,1fr)}
+.pd{min-width:0;opacity:0;transform:translateY(28px);transition:opacity .9s var(--out),transform .9s var(--out)}
+.pd.in{opacity:1;transform:none}
+.pm{position:relative;aspect-ratio:4/4.3;background:var(--ct,var(--tile));border-radius:18px;overflow:hidden}
+.pm>a{position:absolute;inset:0;display:grid;place-items:center}
+.pm img{width:72%;height:72%;object-fit:contain;mix-blend-mode:multiply;transition:transform 1s var(--out)}
+.pd:hover .pm img{transform:scale(1.06)}
+.badges{position:absolute;top:14px;left:14px;display:flex;flex-direction:column;gap:5px;z-index:2;align-items:flex-start}
+.bdg{background:#fff;border-radius:999px;padding:4px 10px;font-size:11.5px;font-weight:600}
+.bdg.o{color:var(--orange)}.bdg.t{color:var(--teal)}.bdg.s{background:var(--orange);color:#fff}
+.fav{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--ink2);z-index:2;opacity:0;transform:scale(.8);transition:.35s var(--out)}
+.pd:hover .fav,.fav.on{opacity:1;transform:none}
+.fav.on{color:#d92d4b}.fav.on svg{fill:currentColor;animation:popb .45s var(--out)}
+.quick{position:absolute;left:12px;right:12px;bottom:12px;display:flex;gap:8px;z-index:2;transform:translateY(calc(100% + 14px));transition:transform .5s var(--out)}
+.pd:hover .quick,.pd:focus-within .quick{transform:none}
+.quick button,.quick a{flex:1;height:42px;border-radius:12px;font-size:13.5px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:7px;transition:.2s}
+.quick .ql{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);flex:0 0 42px}
+.quick .ql:hover{background:#fff}
+.quick .add{background:var(--cc,var(--ink));color:#fff}
+.quick .add:hover{filter:brightness(.9)}
+.quick .add.ok{background:var(--green)}
+.quick .call{background:#fff;color:var(--ink)}
+.quick .call:hover{background:var(--ink);color:#fff}
+.pi{padding:16px 2px 0}
+.pi .mk{font-size:12px;color:var(--cc);font-weight:600;min-height:18px;display:flex;align-items:center;gap:6px}
+.pi .mk::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cc)}
+.pi h3{font-size:15.5px;font-weight:500;line-height:1.35;margin-top:3px;letter-spacing:-.015em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pi h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.pi .pr{font-size:15.5px;font-weight:600;margin-top:8px}
+.pi .pr.na{font-weight:400;color:var(--muted);font-size:13.5px}
+.mob-add{display:none}
+
+.promo{grid-column:span 2;border-radius:18px;background:radial-gradient(circle at 100% 100%,rgba(0,163,163,.55),transparent 45%),radial-gradient(circle at 0% 0%,rgba(0,119,192,.6),transparent 55%),var(--navy);color:#fff;padding:42px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;position:relative;overflow:hidden;min-height:100%;opacity:0;transform:translateY(28px);transition:opacity .9s var(--out),transform .9s var(--out)}
+.promo.in{opacity:1;transform:none}
+.grid.d2 .promo{grid-column:span 2}
+.promo::after{content:"";position:absolute;right:-90px;bottom:-90px;width:340px;height:340px;border-radius:50%;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 0 50px rgba(255,255,255,.03),0 0 0 100px rgba(255,255,255,.02)}
+.promo small{font-size:12.5px;color:#8fb4d3;font-weight:500}
+.promo h3{font-size:clamp(24px,2.4vw,32px);font-weight:600;letter-spacing:-.03em;line-height:1.15;margin-top:10px;max-width:520px}
+.promo p{color:#b7cadb;font-size:15px;margin-top:12px;max-width:460px}
+.promo .ways{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+.promo .ways a:first-child{background:var(--org)!important;border-color:var(--org)!important}
+.promo .ways a{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px 16px;font-size:14.5px;font-weight:500;transition:.3s var(--out)}
+.promo .ways a:hover{background:#fff;color:var(--ink)}
+.promo .ways small{display:block;font-size:11.5px;color:inherit;opacity:.7}
+
+.loadm{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:64px}
+.loadm p{font-size:13px;color:var(--muted)}
+.prog{width:220px;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--teal2),var(--grn),var(--org));transition:width .8s var(--out)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 26px;border-radius:999px;background:var(--ink);color:#fff;font-size:14.5px;font-weight:500;transition:.25s}
+.btn:hover{background:var(--blue)}
+.btn.line{background:#fff;color:var(--ink);border:1px solid var(--line2)}
+.btn.line:hover{border-color:var(--ink);background:#fff}
+.empty{display:none;padding:80px 0;text-align:center;color:var(--muted)}
+
+/* guide */
+.guide{display:grid;grid-template-columns:4fr 8fr;gap:60px;padding:110px 0 30px;border-top:1px solid var(--line);margin-top:70px}
+.guide .gl{position:sticky;top:110px;align-self:start}
+.guide .gl small{font-size:13px;color:var(--teal2);font-weight:600}
+.guide .gl h2{font-size:40px;font-weight:600;letter-spacing:-.04em;line-height:1.05;margin-top:12px}
+.guide .gl p{color:var(--muted);margin-top:16px;max-width:320px}
+.gitem{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:34px 0;border-bottom:1px solid var(--line)}
+.gitem:first-child{padding-top:0}
+.gitem .n{width:46px;height:46px;border-radius:14px;background:var(--ct);color:var(--cc);font-size:15px;font-weight:700;display:grid;place-items:center}
+.gitem h3{font-size:26px;font-weight:600;letter-spacing:-.03em;line-height:1.2}
+.gitem p{font-size:16px;color:var(--ink2);margin-top:12px;line-height:1.65;max-width:640px}
+.gitem .lk{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--cc);margin-top:14px}
+.gitem .lk svg{transition:transform .3s var(--out)}
+.gitem .lk:hover svg{transform:translateX(4px)}
+
+/* contact strip */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:22px;margin-top:80px;overflow:hidden}
+.strip>*{padding:30px;display:flex;gap:16px;align-items:flex-start;transition:background .3s}
+.strip>*+*{border-left:1px solid var(--line)}
+
+.strip .ic{width:44px;height:44px;border-radius:12px;background:var(--cc);display:grid;place-items:center;flex:none;color:#fff}
+.strip>*:nth-child(1){--cc:var(--blue);background:var(--blue-t)}.strip>*:nth-child(2){--cc:var(--teal2);background:var(--teal-t)}.strip>*:nth-child(3){--cc:var(--grn);background:var(--grn-t)}
+.strip a:hover{filter:saturate(1.3)}
+.strip small{font-size:12.5px;color:var(--muted)}
+.strip b{display:block;font-size:17px;font-weight:600;letter-spacing:-.02em;margin-top:2px;overflow-wrap:anywhere}
+
+/* footer */
+footer{margin-top:90px;background:linear-gradient(180deg,var(--blue-t),#f6f9fc 60%);border-top:4px solid;border-image:linear-gradient(90deg,var(--blue) 0 25%,var(--teal2) 25% 50%,var(--grn) 50% 75%,var(--org) 75%) 1;padding:60px 0 28px;font-size:14px;color:var(--muted)}
+.fgrid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:40px}
+.fabout img{height:32px;width:auto;margin-bottom:18px;mix-blend-mode:multiply}
+.fabout p{max-width:360px;line-height:1.6}
+.fabout .adr{margin-top:16px;color:var(--ink2)}
+footer h4{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+footer h4::before{content:"";width:8px;height:8px;border-radius:3px;background:var(--hc)}
+.fgrid>div:nth-child(2) h4{--hc:var(--blue)}.fgrid>div:nth-child(3) h4{--hc:var(--teal2)}.fgrid>div:nth-child(4) h4{--hc:var(--org)}
+footer ul{list-style:none;display:grid;gap:9px}
+footer ul a:hover{color:var(--blue)}
+.fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line2);margin-top:50px;padding-top:22px;font-size:12.5px}
+.fbot a{color:var(--ink2);font-weight:500}
+.fbot a:hover{color:var(--ink)}
+
+/* drawers */
+.veil{position:fixed;inset:0;background:rgba(15,20,25,.32);backdrop-filter:blur(3px);z-index:140;opacity:0;visibility:hidden;transition:.4s}
+.veil.on{opacity:1;visibility:visible}
+.drw{position:fixed;top:0;right:0;bottom:0;width:430px;max-width:100%;background:#fff;z-index:150;transform:translateX(100%);visibility:hidden;transition:transform .55s var(--out),visibility .55s;display:flex;flex-direction:column}
+.drw.left{right:auto;left:0;transform:translateX(-100%)}
+.drw.on{transform:none;visibility:visible}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:24px 28px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:22px;font-weight:600;letter-spacing:-.025em}
+.x{width:36px;height:36px;border-radius:50%;background:var(--tile);display:grid;place-items:center;transition:.25s}
+.x:hover{background:var(--ink);color:#fff}
+.dbody{flex:1;overflow:auto;padding:8px 28px}
+.bi{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);animation:fi .4s var(--out)}
+.bi .im{width:78px;height:78px;border-radius:12px;background:var(--tile);display:grid;place-items:center;flex:none}
+.bi img{width:72%;height:72%;object-fit:contain;mix-blend-mode:multiply}
+.bi b{font-size:14px;font-weight:500;line-height:1.35;display:block}
+.bi .q{display:inline-flex;align-items:center;gap:10px;margin-top:10px;border:1px solid var(--line2);border-radius:999px;padding:2px;font-size:13px}
+.bi .q button{width:24px;height:24px;border-radius:50%}
+.bi .q button:hover{background:var(--tile)}
+.bi .pr{margin-left:auto;font-weight:600;white-space:nowrap;font-size:14px}
+.bi .rm{display:block;font-size:12.5px;color:var(--muted);margin-top:8px;text-decoration:underline}
+.be{text-align:center;color:var(--muted);padding:70px 0}
+.dfoot{padding:22px 28px 28px;border-top:1px solid var(--line)}
+.dfoot .tot{display:flex;justify-content:space-between;font-size:17px;font-weight:600;margin-bottom:16px}
+.dfoot .btn{width:100%}
+#fsBody .sg{padding:18px 0}
+
+dialog{border:0;border-radius:26px;padding:0;width:min(960px,calc(100% - 32px));margin:auto;overflow:hidden}
+dialog::backdrop{background:rgba(15,20,25,.35);backdrop-filter:blur(4px)}
+dialog[open]{animation:dlg .45s var(--out)}
+@keyframes dlg{from{opacity:0;transform:translateY(20px) scale(.98)}}
+.qv{display:grid;grid-template-columns:1.1fr 1fr}
+.qv .m{background:var(--tile);display:grid;place-items:center;padding:48px;min-height:460px;position:relative}
+.qv .m img{max-height:380px;object-fit:contain;mix-blend-mode:multiply}
+.qv .b{padding:48px 42px 40px;display:flex;flex-direction:column}
+dialog .x{z-index:3}
+.qv .x{position:absolute;top:18px;right:18px}
+.qv .mk{font-size:13px;color:var(--muted)}
+.qv h3{font-size:28px;font-weight:600;letter-spacing:-.03em;line-height:1.15;margin-top:6px;padding-right:30px}
+.qv .pr{font-size:22px;font-weight:600;margin-top:14px}
+.qv .nt{font-size:13.5px;color:var(--muted);margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.qv .acts{margin-top:auto;padding-top:28px;display:grid;gap:12px}
+.qrow{display:flex;gap:10px}
+.qty{display:flex;align-items:center;border:1px solid var(--line2);border-radius:999px;padding:3px}
+.qty button{width:40px;height:40px;border-radius:50%;font-size:17px}
+.qty button:hover{background:var(--tile)}
+.qty span{min-width:24px;text-align:center;font-weight:600}
+.qrow .btn{flex:1}
+.qv .lk{font-size:14px;font-weight:500;color:var(--brand);text-align:center}
+.qv .lk:hover{text-decoration:underline}
+
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,20px);opacity:0;background:var(--ink);color:#fff;border-radius:999px;padding:12px 20px;font-size:13.5px;z-index:200;transition:.45s var(--out);display:flex;gap:10px;align-items:center;white-space:nowrap;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.toast i{width:18px;height:18px;border-radius:50%;background:#3bb273;display:grid;place-items:center}
+
+[data-c=oxygen]{--cc:var(--blue);--ct:var(--blue-t)}[data-c=aerosol]{--cc:var(--teal2);--ct:var(--teal-t)}[data-c=suction]{--cc:var(--grn);--ct:var(--grn-t)}[data-c=acc],[data-c=all]{--cc:var(--org);--ct:var(--org-t)}[data-c=all]{--cc:var(--ink);--ct:var(--tile)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--out),transform 1s var(--out)}
+.rv.in{opacity:1;transform:none}
+.intro .rv:nth-child(2){transition-delay:.06s}
+
+@media (max-width:1240px){
+  .nav>li:nth-child(n+5){display:none}
+  .hsearch{width:220px}.hsearch:focus-within{width:260px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:1000px){
+  .nav,.util .r{display:none}
+  .burger{display:grid}
+  .intro{grid-template-columns:1fr;gap:36px}
+  .bento{min-height:480px}
+  .shop{grid-template-columns:1fr}
+  .side{display:none}
+  .fopen{display:inline-flex}
+  .guide{grid-template-columns:1fr;gap:20px}
+  .guide .gl{position:static}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .fabout{grid-column:1/-1}
+}
+@media (max-width:680px){
+  .wrap{padding:0 18px}
+  .util .l span{display:none}
+  .hdr .wrap{gap:12px;height:60px}
+  .logo img{height:26px}
+  .hsearch{display:none}
+  .icons{margin-left:auto}
+  .intro{padding:28px 0 50px}
+  .sublist a{font-size:16px;padding:14px 0}
+  .bento{grid-template-columns:1fr 1fr;grid-template-rows:auto auto;min-height:0}
+  .ft-tile.big{grid-column:1/-1;grid-row:auto;min-height:380px;padding:24px}
+  .ft-tile.big h3{font-size:22px}
+  .ft-tile.sm{min-height:250px;padding:18px}
+  .ft-tile.sm h3{font-size:14.5px}
+  .shop-head h2{font-size:28px}
+  .tbar .dens{display:none}
+  .grid,.grid.d2{grid-template-columns:1fr 1fr;gap:30px 12px}
+  .promo,.grid.d2 .promo{grid-column:1/-1;padding:28px}
+  .pm{border-radius:14px}
+  .fav{opacity:1;transform:none;width:32px;height:32px}
+  .quick{display:none}
+  .pi h3{font-size:14px}
+  .mob-add{display:flex;margin-top:10px;height:36px;border-radius:999px;background:var(--cc,var(--ink));color:#fff;font-size:13px;font-weight:500;align-items:center;justify-content:center;width:100%}
+  .mob-add.call{background:#fff;color:var(--ink);border:1px solid var(--line2)}
+  .gitem{grid-template-columns:1fr;gap:6px}.gitem h3{font-size:22px}
+  .guide{padding-top:70px}.guide .gl h2{font-size:32px}
+  .strip{grid-template-columns:1fr}.strip>*+*{border-left:0;border-top:1px solid var(--line)}
+  .qv{grid-template-columns:1fr}.qv .m{min-height:250px;padding:28px}.qv .m img{max-height:200px}.qv .b{padding:28px 24px}
+  .sdrop{width:auto;left:18px;right:18px;top:118px}
+  .sbtn{display:grid!important}
+  .hsearch.mopen{display:flex;position:absolute;left:18px;right:18px;top:66px;width:auto;background:#fff;border-color:var(--line2);box-shadow:0 10px 30px -12px rgba(0,0,0,.25)}
+  .toast{bottom:auto;top:70px;max-width:calc(100% - 32px)}
+  .qv .x{background:#fff}
+}
+
+.mm-list{display:flex;flex-direction:column}
+.mm-h{font-size:12px;color:#86868b;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:22px 0 6px}
+.mm-h:first-child{margin-top:4px}
+.mm-list a{font-size:19px;font-weight:500;padding:9px 0;letter-spacing:-.02em;border-bottom:1px solid rgba(0,0,0,.06)}
+.mm-call{padding:20px 30px 28px;border-top:1px solid rgba(0,0,0,.08);display:flex;flex-direction:column;gap:4px;font-size:13px;color:#6e6e73}
+.mm-call a{font-size:17px;font-weight:600;color:var(--blue)}
+.mm-list a[data-mgo]{display:flex;align-items:center;gap:10px}.mm-list a[data-mgo]::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cc)}
+@media (hover:none){.quick{display:none}.fav{opacity:1;transform:none}.mob-add{display:flex;margin-top:10px;height:38px;border-radius:999px;background:var(--cc,var(--ink));color:#fff;font-size:13.5px;font-weight:500;align-items:center;justify-content:center;width:100%}.mob-add.call{background:#fff;color:var(--ink);border:1px solid var(--line2)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.pd,.rv,.promo{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+<div class="util"><div class="wrap">
+  <div class="l"><i class="dot"></i><b>1-866-763-4363</b><span>Mon - Fri 9am - 5pm EST | Closed Saturday &amp; Sunday</span></div>
+  <div class="r"><a href="https://dmesupplyusa.com/customer/account/login/">Sign In</a><a href="https://dmesupplyusa.com/customer/account/create/">Create an Account</a><a href="#">Loyalty Points</a></div>
+</div></div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap" style="position:relative">
+    <a class="logo" href="https://dmesupplyusa.com/"><img src="https://dmesupplyusa.com/media/logo/stores/1/DME-Logo_1_R.png" alt="DME Supply USA"></a>
+    <ul class="nav">
+      <li class="on"><a href="#">Respiratory Devices</a>
+        <div class="mega"><div class="wrap">
+          <div><h6>Respiratory Devices</h6><ul><li><a href="#" data-go="oxygen">Oxygen Supplies</a></li><li><a href="#" data-go="aerosol">Aerosol Inhalers</a></li><li><a href="#" data-go="suction">Suction Equipment</a></li><li><a href="#" data-go="acc">Respiratory Accessories</a></li></ul></div>
+          <div><h6>Also in Respiratory</h6><ul><li><a href="#">Respironics EverFlo Oxygen Concentrator OPI Pre-Owned</a></li><li><a href="#shop">Shop all 159 products</a></li></ul></div>
+          <a class="ft" href="#" data-qv="1"><img data-p="1" alt=""><div><small>New Arrival</small><b>React Health Homefill Compressor</b><span>$1,852.00</span></div></a>
+        </div></div></li>
+      <li style="--nc:var(--teal2)"><a href="#">Sleep Therapy</a>
+        <div class="mega"><div class="wrap"><div><h6>Sleep Therapy</h6><ul><li><a href="#">PAP Devices</a></li><li><a href="#">CPAP Masks</a></li><li><a href="#">CPAP Mask Parts</a></li></ul></div><div><h6>&nbsp;</h6><ul><li><a href="#">CPAP Supplies</a></li><li><a href="#">PAP Alternatives</a></li><li><a href="#">CPAP Accessories</a></li></ul></div><div></div></div></div></li>
+      <li style="--nc:var(--grn)"><a href="#">Mobility</a>
+        <div class="mega"><div class="wrap"><div><h6>Mobility</h6><ul><li><a href="#">Walkers</a></li><li><a href="#">Rollator Walkers</a></li><li><a href="#">Canes and Crutches</a></li><li><a href="#">Wheelchairs</a></li></ul></div><div><h6>&nbsp;</h6><ul><li><a href="#">Mobility Scooters</a></li><li><a href="#">Patient Lifts</a></li><li><a href="#">Lift Chairs</a></li></ul></div><div></div></div></div></li>
+      <li style="--nc:var(--org)"><a href="#">Patient Aids</a>
+        <div class="mega"><div class="wrap"><div><h6>Patient Aids</h6><ul><li><a href="#">Bath Aids</a></li><li><a href="#">Toilet Aids</a></li><li><a href="#">Daily Aids</a></li><li><a href="#">Dietary</a></li></ul></div><div><h6>&nbsp;</h6><ul><li><a href="#">Incontinence</a></li><li><a href="#">Diabetes Supplies</a></li><li><a href="#">Blood Pressure</a></li><li><a href="#">Wound Care Supplies</a></li></ul></div><div></div></div></div></li>
+      <li><a href="#">Bedroom</a>
+        <div class="mega"><div class="wrap"><div><h6>Bedroom</h6><ul><li><a href="#">Medical Beds</a></li><li><a href="#">Pressure Prevention</a></li><li><a href="#">Bed Accessories</a></li><li><a href="#">Bedding and Linens</a></li></ul></div><div></div><div></div></div></div></li>
+      <li><a href="#">Sanitation &amp; Cleaning</a></li>
+    </ul>
+    <label class="hsearch" id="hs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="sq" placeholder="Search respiratory devices" autocomplete="off" aria-label="Search"></label>
+    <div class="icons">
+      <a class="ib" href="https://dmesupplyusa.com/wishlist/" aria-label="My Wish List"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><span class="n" id="wN">0</span></a>
+      <button class="ib" id="bagBtn" aria-label="Cart"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" id="bN">0</span></button>
+      <button class="ib sbtn" id="sOpen" aria-label="Search"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="ib burger" id="mmBtn" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9h16M4 15h16"/></svg></button>
+    </div>
+    <div class="sdrop" id="sdrop"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <div class="introL rv">
+      <nav class="crumb"><a href="https://dmesupplyusa.com/">Home</a><span>/</span><span>Respiratory Devices</span></nav>
+      <h1>Respiratory Devices<span>Breathe easy.</span></h1>
+      <p class="lead">Children and adults who experience breathing challenges will find affordable respiratory equipment at DME Supply USA, from compressor nebulizers for kids to portable oxygen concentrator supplies for adults.</p>
+      <ul class="sublist">
+        <li data-c="oxygen"><a href="#shop" data-go="oxygen"><span class="ix">01</span>Oxygen Supplies<span class="ar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li data-c="aerosol"><a href="#shop" data-go="aerosol"><span class="ix">02</span>Aerosol Inhalers<span class="ar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li data-c="suction"><a href="#shop" data-go="suction"><span class="ix">03</span>Suction Equipment<span class="ar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li data-c="acc"><a href="#shop" data-go="acc"><span class="ix">04</span>Respiratory Accessories<span class="ar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      </ul>
+      <div class="help-mini"><i class="dot"></i><span>Need help with a doctor's recommendation? Call <b>888-293-8639</b></span></div>
+    </div>
+    <div class="bento rv">
+      <article class="ft-tile big" data-qv="1" data-c="oxygen">
+        <div class="lbl"><span class="o">New Arrival</span><span class="t">Rx Required</span></div>
+        <h3>React Health Homefill Compressor</h3><div class="pr">$1,852.00</div>
+        <div class="im"><img data-p="1" alt="React Health Homefill Compressor"></div>
+        <span class="go"><span>Quick Look</span><i><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </article>
+      <article class="ft-tile sm" data-qv="18" data-c="aerosol">
+        <div class="lbl"><span class="o">Special Price</span></div>
+        <h3>DeVilbiss Traveler Portable Compressor Nebulizer System</h3><div class="pr">$145.00</div>
+        <div class="im"><img data-p="18" alt=""></div>
+        <span class="go"><i><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </article>
+      <article class="ft-tile sm" data-qv="21" data-c="suction">
+        <div class="lbl"><span class="t">Suction Equipment</span></div>
+        <h3>Drive Heavy-Duty Suction Machine</h3><div class="pr">$229.99</div>
+        <div class="im"><img data-p="21" alt=""></div>
+        <span class="go"><i><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </article>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="shop-head rv"><h2>Shop all<sup id="hc">159</sup></h2></div>
+    <div class="shop">
+      <aside class="side" id="side"></aside>
+      <div>
+        <div class="tbar">
+          <button class="fopen" id="fopen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>Filters</button>
+          <div class="chips" id="chips"></div>
+          <div class="selw"><select id="sort" aria-label="Sort by"><option value="pos">Sort: Featured</option><option value="name">Sort: Name</option><option value="pa">Price: Low to High</option><option value="pd">Price: High to Low</option></select></div>
+          <div class="dens" role="group" aria-label="Grid size"><button class="on" data-d="3" aria-label="3 per row"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="5.5" height="20" rx="1.5"/><rect x="9.25" y="2" width="5.5" height="20" rx="1.5"/><rect x="16.5" y="2" width="5.5" height="20" rx="1.5"/></svg></button><button data-d="2" aria-label="2 per row"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="9" height="20" rx="1.5"/><rect x="13" y="2" width="9" height="20" rx="1.5"/></svg></button></div>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty">No products match these filters. <button class="clr" data-clear>Clear all filters</button></div>
+        <div class="loadm" id="loadm"><p id="lmP"></p><div class="prog"><i id="lmI"></i></div><button class="btn line" id="lmB">Load more</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide">
+    <div class="gl rv"><small>Our respiratory equipment</small><h2>Help you and your family breathe easy.</h2><p>Learn more about the respiratory supplies that can help you and your family breathe easy.</p></div>
+    <div id="guide"></div>
+  </section>
+
+  <div class="strip rv">
+    <a href="tel:8882938639"><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Call us</small><b>888-293-8639</b></span></a>
+    <a href="mailto:support@dmesupplyusa.com"><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>E-mail us</small><b>support@dmesupplyusa.com</b></span></a>
+    <div><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>Hours</small><b>Mon - Fri 9am - 5pm EST</b><small>Closed Saturday &amp; Sunday</small></span></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fabout"><img src="https://dmesupplyusa.com/media/logo/stores/1/DME-Logo_1_R.png" alt="DME Supply USA"><p>DME Supply USA's goal is to provide the very best in durable medical equipment along with excellent U.S. based Customer Service to deliver a shopping experience that is flawless from beginning to end.</p><p class="adr">720 Moorefield Park Drive, Suite 202<br>Chesterfield, Virginia 23236<br>Call Us 866-763-4363 &middot; Fax: (844) 667-8650<br>info@dmesupplyusa.com &middot; support@dmesupplyusa.com</p></div>
+      <div><h4>Customer Service</h4><ul><li><a href="#">Contact Us</a></li><li><a href="#">Orders and Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Why DME Supply USA?</a></li><li><a href="#">My Account</a></li><li><a href="#">Data Security</a></li><li><a href="#">Loyalty Points</a></li></ul></div>
+      <div><h4>Policies</h4><ul><li><a href="#">Return Policy</a></li><li><a href="#">Shipping Policy</a></li><li><a href="#">Prescription Policy</a></li><li><a href="#">Mask Assurance</a></li><li><a href="#">Anti-Discrimination Policy</a></li><li><a href="#">General Privacy Policy</a></li><li><a href="#">State-Specific Privacy Policy</a></li></ul></div>
+      <div><h4>Helpful Resources</h4><ul><li><a href="#">The DME Blog</a></li><li><a href="#">More About Us</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>&copy;2026 DME Supply USA. All Rights Reserved.</span><span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span></div>
+  </div>
+</footer>
+
+<div class="veil" id="veil"></div>
+<aside class="drw" id="bag" aria-label="Cart"><div class="dh"><h3>Your cart</h3><button class="x" data-x aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="dbody" id="bl"></div><div class="dfoot"><div class="tot"><span>Subtotal</span><span id="bt">$0.00</span></div><a class="btn" href="https://dmesupplyusa.com/checkout/cart/">Proceed to Checkout</a></div></aside>
+<aside class="drw left" id="mm" aria-label="Menu"><div class="dh"><h3>Menu</h3><button class="x" data-x aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="dbody"><nav class="mm-list">
+  <p class="mm-h">Respiratory Devices</p>
+  <a href="#shop" data-mgo="oxygen" data-c="oxygen">Oxygen Supplies</a><a href="#shop" data-mgo="aerosol" data-c="aerosol">Aerosol Inhalers</a><a href="#shop" data-mgo="suction" data-c="suction">Suction Equipment</a><a href="#shop" data-mgo="acc" data-c="acc">Respiratory Accessories</a><a href="#">Respironics EverFlo Oxygen Concentrator OPI Pre-Owned</a>
+  <p class="mm-h">Shop more</p>
+  <a href="#">Sleep Therapy</a><a href="#">Mobility</a><a href="#">Patient Aids</a><a href="#">Bedroom</a><a href="#">Sanitation &amp; Cleaning</a>
+  <p class="mm-h">Account</p>
+  <a href="https://dmesupplyusa.com/customer/account/login/">Sign In</a><a href="https://dmesupplyusa.com/customer/account/create/">Create an Account</a><a href="https://dmesupplyusa.com/wishlist/">My Wish List</a>
+</nav>
+</div><div class="mm-call"><a href="tel:18667634363">Call 1-866-763-4363</a><span>Mon - Fri 9am - 5pm EST</span></div></aside>
+<aside class="drw left" id="fs" aria-label="Filters"><div class="dh"><h3>Filters</h3><button class="x" data-x aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="dbody" id="fsBody"></div><div class="dfoot" style="display:flex;gap:10px"><button class="btn line" data-clear style="flex:1">Clear</button><button class="btn" data-x id="fsGo" style="flex:1.4">Show results</button></div></aside>
+
+<dialog id="qv"><div class="qv"><div class="m"><div class="badges" id="qB"></div><img id="qI" alt=""></div><div class="b"><button class="x" data-dx aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button><div class="mk" id="qM"></div><h3 id="qN"></h3><div class="pr" id="qP"></div><p class="nt" id="qT"></p><div class="acts" id="qA"></div></div></div></dialog>
+
+<div class="toast" id="toast"><i><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.6"><path d="M20 6 9 17l-5-5"/></svg></i><span id="tT"></span></div>
+
+<script>
+const IMG='https://dmesupplyusa.com/media/catalog/product/cache/030716fc62035027b622eeef186d3d67/',SITE='https://dmesupplyusa.com/';
+const P=[
+ ['Vive Health Juniper Sieve Bed - 6 Setting','Vive Health',169.99,'vive-health-juniper-sieve-bed-6-setting.html','j/u/juniper_-_6_setting_sieve_bed-next-to-poc.png','acc'],
+ ['React Health Homefill Compressor','React',1852,'homefill-compressor.html','h/o/homefill_compressor.png','oxygen',['New Arrival','Rx Required']],
+ ['Swivel Connector for Oxygen Tubing','',15,'swivel-connector-for-oxygen-tubing.html','9/5/95d76a50a2470e0c48b74ba4d04986f9c9565932.jpg','oxygen'],
+ ["Comfort Soft Plus\u00ae Adult 7' Nasal Cannula - Green",'Westmed',5.95,'comfort-soft-plusr-adult-7-nasal-cannula-green.html','c/s/csp-cannula_1.png','oxygen'],
+ ['Drive iGo2 Portable Oxygen Concentrator Battery Pack','Drive Medical',199.98,'drive-igo2-portable-oxygen-concentrator-battery-pack.html','i/g/igo2_battery_pack_1.jpg','acc'],
+ ['CAIRE FreeStyle\u2122 Comfort DC Power Cord','CAIRE',24.95,'caire-freestyletm-comfort-dc-power-cord.html','F/r/FreeStyle_Comfort_DC-cord.jpg','acc'],
+ ['Rhythm Nasal Cannula for the P2 Portable Oxygen Concentrator','Rhythm Healthcare',7.99,'rhythm-nasal-cannula-for-the-p2-portable-oxygen-concentrator.html','p/2/p2nc-1_nasalcanula-01.jpg','oxygen'],
+ ['Salter Oxygen Tubing 15 Feet','Salter Labs',2.48,'salter-oxygen-tubing-15-feet.html','5/6/564a05a31cef10b93ad35483fa67f9fed970a6a4.jpg','oxygen'],
+ ['OxyGo NEXT Portable Oxygen Concentrator Battery','OxyGo',null,'oxygo-next-portable-oxygen-concentrator-battery.html','b/1/b127-0819_oxygo-next-popular-packages_map-13_1.png','acc'],
+ ['High Flow Salter Style 7ft Cannula','',4.99,'high-flow-salter-style-7ft-cannula.html','1/5/157-16soft-hf-7-25.jpg','oxygen'],
+ ['Drive Universal Suction Tubing and Filter Kit','Drive Medical',19.99,'drive-universal-suction-tubing-and-filter-kit.html','1/8/18600-kit.jpg','suction'],
+ ['Medline Soft Touch Fingertip Pulse Oximeter, OLED Display','Medline',65.99,'medline-soft-touch-fingertip-pulse-oximeter-oled-display.html','h/c/hcsm70s_pri04.jpg','acc'],
+ ['Oxygen Tubing Salter Labs\u00ae 50 Foot Length Tubing','Salter Labs',4.95,'oxygen-tubing-salter-labsr-50-foot-length-tubing.html','3/1/312533.jpg','oxygen'],
+ ['Drive\u2122 CHAD\u00ae Bonsai\u00ae Velocity Pneumatic Oxygen Conserver','Drive Medical',149.99,'drivetm-chadr-bonsair-velocity-pneumatic-oxygen-conserver.html','o/m/om-812_2.jpg','oxygen'],
+ ['Sunset Reusable Nebulizer Kit','Sunset Healthcare',7.95,'sunset-reusable-nebulizer-kit.html','f/f/ff5e8ad3e85588a0a0463663f0f39404337d72aa.jpg','aerosol'],
+ ['Rhythm Cotton Filter for the P2 Portable Oxygen Concentrator (5pcs)','Rhythm Healthcare',9.5,'rhythm-cotton-filter-for-the-p2-portable-oxygen-concentrator-5pcs.html','p/2/p2fc-1_cottonfllter-01.jpg','acc'],
+ ['OxyGo NEXT Replacement Sieve Beds','OxyGo',null,'oxygo-next-replacement-sieve-beds.html','1/4/1400-3060-sieve-bed.jpg','acc'],
+ ['Drive CHAD\u00ae Evolution\u2122 Electronic Oxygen Conserver','Drive Medical',239.99,'drive-chadr-evolutiontm-electronic-oxygen-conserver.html','o/x/oxygen_3.jpg','oxygen'],
+ ['DeVilbiss Traveler Portable Compressor Nebulizer System','DeVilbiss',145,'devilbiss-traveler-portable-compressor-nebulizer-system.html','c/3/c3ec98bd46d492b1a854fecbde70495552956674.jpg','aerosol',['Special Price']],
+ ['Multi Use Nebulizer Filter','',8,'multi-use-nebulizer-filter.html','b/f/bf016-nebulizer-filter-md_1.jpg','aerosol'],
+ ['ResMed AirMini\u2122 HumidX\u2122 Plus Waterless Humidification CPAP Filter','ResMed',37,'resmed-airminitm-humidxtm-plus-waterless-humidification-cpap-filter.html','h/u/humidxplus-6pack_1.jpg','acc',['Special Price']],
+ ['Drive Heavy-Duty Suction Machine','Drive Medical',229.99,'drive-heavy-duty-suction-machine.html','1/8/18600_5.jpg','suction'],
+ ['CPAPHero CPAP Strap Covers','CPAPHero',14.99,'cpaphero-cpap-strap-covers.html','c/h/chscv-cpaphero_cpap_strap_covers_1.png','acc'],
+ ['Sunset Adult Cannula 7ft SOFT Oxygen Supply Tube','Sunset Healthcare',3.99,'sunset-adult-cannula-7ft-soft-oxygen-supply-tube.html','s/u/sunset_res1107s.jpg','oxygen'],
+ ['Drive\u2122 Medical Power Neb Ultra Nebulizer','Drive Medical',34.4,'drivetm-medical-power-neb-ultra-nebulizer.html','1/8/18080_5.jpg','aerosol'],
+ ['Sunset Healthcare Oxygen Enrichment Adapter','Sunset Healthcare',12.3,'sunset-healthcare-oxygen-enrichment-adapter.html','r/e/res019.jpg','oxygen'],
+ ['Philips Respironics SimplyGo Mini Battery','Philips Respironics',325.95,'philips-respironics-simplygo-mini-battery.html','s/i/simplygomini_extendedbattery_ckhilg_1.jpg','acc'],
+ ['Rhythm Healthcare P2 Battery','Rhythm Healthcare',259,'rhythm-healthcare-p2-battery.html','p/2/p2by001-1_battery-02.jpg','acc'],
+ ['OxyGo NEXT Desktop Battery Charger','OxyGo',null,'oxygo-next-desktop-battery-charger.html','1/4/1400-3030-dsktp-chrgr.jpg','acc'],
+ ['OxyGo DC/Car Charger','OxyGo',null,'oxygo-dc-car-charger.html','B/1/B127-0819_OxyGo-NEXT-Popular-Packages_MAP-8.png','acc']
+].map((a,i)=>({i,n:a[0],b:a[1],p:a[2],u:SITE+a[3],img:IMG+a[4],c:a[5],f:a[6]||[]}));
+const MFR=[['Medline',21],['OxyGo',13],['Drive Medical',12],['CAIRE',11],['Drive DeVilbiss Healthcare',9],['Philips Respironics',8],['SeQual',8],['Sunset Healthcare',8],['AirSep',7],['Belluscura',6],['Rhythm Healthcare',6],['Salter Labs',6],['Vyaire Medical',5],['Westmed',4],['ResMed',3],['Sunset',3],['DeVilbiss',2],['GCE Group',2],['Respironics',2],['Somnetics',2],['Sun Med',2],['Transcend',2],['3B Products',1],['AG Industries',1],['CPAPHero',1],['Direct Supply\u00ae',1],['DME Supply USA',1],['Invacare',1],['McKesson Brand',1],['Medquarters',1],['Precision Medical',1],['React',1],['SleepRes',1],['Vive Health',1]];
+const CN={all:'All respiratory devices',oxygen:'Oxygen Supplies',aerosol:'Aerosol Inhalers',suction:'Suction Equipment',acc:'Respiratory Accessories'};
+const GUIDE=[
+ ['Nebulizers for children','aerosol',"Whether your child suffers from asthma or requires special respiratory therapy needs, you'll find a variety of respiratory devices that will aid in their breathing. Many of our nebulizers are portable and can be used easily wherever you are. For the younger children, nebulizers come in cute shapes like panda bears and fire trucks. We also carry pediatric suction machines that are lightweight and portable."],
+ ['Suction machines for adults','suction',"A suction machine is a vital breathing device for patients who experience frequent blocked airways. This machine is used to clear the airway of saliva or any other secretions so that the patient may breathe easily. Browse our selection of suction units to find the breathing machine that best fits your specific needs."],
+ ['Humidifiers','acc',"Humidifiers can be used by the whole family to promote better breathing. This unique breathing machine adds moisture to the air and can be perfect during winter months to ward off the common cold and flu."],
+ ['Respiratory supplies','acc',"We also offer several supplies for your respiratory equipment. Whether you're looking for replacement batteries or disposable waterless humidifiers, we've got it all and everything in between."]
+];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=v=>'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const ARR='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const HEART='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+const EYE='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+const CHEV='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg>';
+$$('[data-p]').forEach(im=>im.src=P[+im.dataset.p].img);
+
+const S={c:'all',lo:0,hi:3495,m:new Set(),sort:'pos',lim:13,bag:new Map(),fav:new Set(),mAll:false};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});
+const isF=()=>S.c!=='all'||S.m.size>0||S.lo>0||S.hi<3495;
+
+/* filters UI (rendered into sidebar and mobile drawer) */
+function filtersHTML(id){
+  return `<div class="sg"><button>Category ${CHEV}</button><div class="bd"><div><div class="in clist">${Object.entries(CN).map(([k,v])=>`<button data-cat="${k}" data-c="${k}" class="${S.c===k?'on':''}">${v}${k==='all'?'<span>159</span>':''}</button>`).join('')}</div></div></div></div>
+  <div class="sg"><button>Price ${CHEV}</button><div class="bd"><div><div class="in">
+    <div class="pv"><label><span>$</span><input type="number" data-pi="lo" value="${S.lo||0.99}" aria-label="Minimum price"></label><label><span>$</span><input type="number" data-pi="hi" value="${S.hi}" aria-label="Maximum price"></label></div>
+    <div class="range"><div class="tr"></div><div class="fl" data-fl></div><input type="range" data-r="lo" min="0" max="3495" value="${S.lo}" aria-label="Minimum price"><input type="range" data-r="hi" min="0" max="3495" value="${S.hi}" aria-label="Maximum price"></div>
+    <div class="presets"><button data-pr="0,25">Under $25</button><button data-pr="25,150">$25 to $150</button><button data-pr="150,500">$150 to $500</button><button data-pr="500,3495">$500+</button></div></div></div></div></div>
+  <div class="sg"><button>Manufacturer ${CHEV}</button><div class="bd"><div><div class="in"><div class="mlist">${MFR.map(([n,c],k)=>`<label class="${k>7&&!S.mAll?'hid':''}"><input type="checkbox" value="${n}" ${S.m.has(n)?'checked':''}>${n}<em>${c}</em></label>`).join('')}</div><button class="more-m" data-mall>${S.mAll?'Show fewer':'Show all 34'}</button></div></div></div></div>
+  <p class="note">Need help finding the equipment your doctor recommended? <a href="tel:8882938639">888-293-8639</a> or <a href="mailto:support@dmesupplyusa.com">support@dmesupplyusa.com</a></p>`;
+}
+function paintFilters(){['#side','#fsBody'].forEach(s=>{const el=$(s);const closed=[...el.querySelectorAll('.sg')].map(g=>g.classList.contains('closed'));el.innerHTML=filtersHTML();el.querySelectorAll('.sg').forEach((g,k)=>closed[k]&&g.classList.add('closed'));paintRange(el)})}
+function paintRange(el){el.querySelectorAll('[data-fl]').forEach(f=>{f.style.left=S.lo/3495*100+'%';f.style.right=100-S.hi/3495*100+'%'})}
+function onFilters(root){
+  root.addEventListener('click',e=>{
+    const sg=e.target.closest('.sg>button');if(sg){sg.parentElement.classList.toggle('closed');return}
+    const c=e.target.closest('[data-cat]');if(c){setCat(c.dataset.cat);return}
+    const pr=e.target.closest('[data-pr]');if(pr){const[a,b]=pr.dataset.pr.split(',').map(Number);S.lo=a;S.hi=b;update();return}
+    if(e.target.closest('[data-mall]')){S.mAll=!S.mAll;paintFilters()}
+  });
+  root.addEventListener('input',e=>{const r=e.target.dataset.r;if(r){let lo=+root.querySelector('[data-r=lo]').value,hi=+root.querySelector('[data-r=hi]').value;if(lo>hi)[lo,hi]=[hi,lo];S.lo=lo;S.hi=hi;paintRange(root);root.querySelector('[data-pi=lo]').value=lo||0.99;root.querySelector('[data-pi=hi]').value=hi;clearTimeout(window._rt);window._rt=setTimeout(()=>update(true),140)}});
+  root.addEventListener('change',e=>{const t=e.target;if(t.type==='checkbox'){t.checked?S.m.add(t.value):S.m.delete(t.value);update()}
+    if(t.dataset.pi){const v=Math.max(0,Math.min(3495,+t.value||0));S[t.dataset.pi]=t.dataset.pi==='lo'&&v<=0.99?0:v;if(S.lo>S.hi)[S.lo,S.hi]=[S.hi,S.lo];update()}});
+}
+onFilters($('#side'));onFilters($('#fsBody'));
+
+function setCat(c){S.c=c;update()}
+function update(keepFilters){S.lim=isF()?12:13;render();if(!keepFilters)paintFilters();else{['#side','#fsBody'].forEach(s=>paintRange($(s)))}}
+
+function list(){
+  let L=P.filter(p=>(S.c==='all'||p.c===S.c)&&(!S.m.size||S.m.has(p.b))&&(p.p==null?!(S.lo>0||S.hi<3495):p.p>=S.lo&&p.p<=S.hi));
+  if(S.sort==='name')L.sort((a,b)=>a.n.localeCompare(b.n));
+  if(S.sort==='pa')L.sort((a,b)=>(a.p??1e9)-(b.p??1e9));
+  if(S.sort==='pd')L.sort((a,b)=>(b.p??-1)-(a.p??-1));
+  return L;
+}
+function badges(p){return p.f.map(f=>`<span class="bdg ${f==='Rx Required'?'t':f==='Special Price'?'s':'o'}">${f}</span>`).join('')}
+function card(p){
+  const call=p.p==null;
+  return `<article class="pd" data-id="${p.i}" data-c="${p.c}">
+    <div class="pm"><div class="badges">${badges(p)}</div><button class="fav ${S.fav.has(p.i)?'on':''}" aria-label="Add to wish list">${HEART}</button>
+      <a href="${p.u}" aria-label="${p.n}"><img loading="lazy" src="${p.img}" alt="${p.n}"></a>
+      <div class="quick"><button class="ql" aria-label="Quick look">${EYE}</button>${call?'<a class="call" href="tel:18667634363">Call for More Information</a>':'<button class="add">Add to Cart</button>'}</div></div>
+    <div class="pi"><div class="mk">${p.b}</div><h3><a href="${p.u}">${p.n}</a></h3><div class="pr ${call?'na':''}">${call?'Call for More Information':fmt(p.p)}</div>
+      ${call?'<a class="mob-add call" href="tel:18667634363">Call 866-763-4363</a>':'<button class="mob-add add">Add to Cart</button>'}</div>
+  </article>`;
+}
+const PROMO=`<aside class="promo"><div><small>How can we help</small><h3>Need assistance finding the respiratory equipment your doctor recently recommended?</h3><p>Contact our responsive customer service representatives. A member of our team will respond to you as soon as possible.</p></div>
+  <div class="ways"><a href="tel:8882938639"><span><small>Call us</small>888-293-8639</span></a><a href="mailto:support@dmesupplyusa.com"><span><small>E-mail us</small>support@dmesupplyusa.com</span></a></div></aside>`;
+function render(){
+  const L=list(),show=L.slice(0,S.lim),g=$('#grid');
+  let h='';show.forEach((p,k)=>{h+=card(p);if(k===3&&!isF())h+=PROMO});
+  g.innerHTML=h;[...g.children].forEach((c,k)=>{c.style.transitionDelay=(k%3)*80+'ms';io.observe(c)});
+  const total=isF()?L.length:159;
+  $('#hc').textContent=total;
+  $('#empty').style.display=L.length?'none':'block';
+  $('#loadm').style.display=(show.length<L.length||!isF())?'flex':'none';
+  $('#lmP').textContent=`Showing ${show.length} of ${total} products`;
+  $('#lmI').style.width=show.length/total*100+'%';
+  $('#lmB').textContent=show.length<L.length?'Load more':'Continue to page 2';
+  const c=[];if(S.c!=='all')c.push(['c',CN[S.c]]);if(S.lo>0||S.hi<3495)c.push(['p',`${fmt(S.lo)} to ${fmt(S.hi)}`]);S.m.forEach(m=>c.push(['m:'+m,m]));
+  $('#chips').innerHTML=c.length?c.map(([k,v])=>`<span class="chip" data-c="${k==='c'?S.c:k==='p'?'aerosol':'oxygen'}">${v}<button data-k="${k}" aria-label="Remove"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button></span>`).join('')+'<button class="clr" data-clear>Clear all</button>':`<span class="lbl">${CN.all}</span>`;
+  $('#fsGo').textContent=`Show ${total} result${total===1?'':'s'}`;
+}
+$('#lmB').onclick=()=>{const L=list();if(S.lim>=L.length){location.href=SITE+'respiratory-devices.html?p=2';return}
+  const from=S.lim;S.lim+=12;const g=$('#grid');L.slice(from,S.lim).forEach((p,k)=>{g.insertAdjacentHTML('beforeend',card(p));const c=g.lastElementChild;c.style.transitionDelay=(k%3)*80+'ms';io.observe(c)});
+  const sh=Math.min(S.lim,L.length),total=isF()?L.length:159;$('#lmP').textContent=`Showing ${sh} of ${total} products`;$('#lmI').style.width=sh/total*100+'%';$('#lmB').textContent=sh<L.length?'Load more':'Continue to page 2'};
+$('#sort').onchange=e=>{S.sort=e.target.value;render()};
+$$('.dens button').forEach(b=>b.onclick=()=>{$$('.dens button').forEach(x=>x.classList.toggle('on',x===b));$('#grid').classList.toggle('d2',b.dataset.d==='2')});
+document.addEventListener('click',e=>{
+  const k=e.target.closest('[data-k]');if(k){const v=k.dataset.k;if(v==='c')S.c='all';else if(v==='p'){S.lo=0;S.hi=3495}else S.m.delete(v.slice(2));update();return}
+  if(e.target.closest('[data-clear]')){S.c='all';S.lo=0;S.hi=3495;S.m.clear();update();return}
+  const go=e.target.closest('[data-go]');if(go){e.preventDefault();setCat(go.dataset.go);$('#shop').scrollIntoView({behavior:'smooth'});return}
+  const qv=e.target.closest('[data-qv]');if(qv){e.preventDefault();openQV(+qv.dataset.qv)}
+});
+
+/* card actions */
+$('#grid').addEventListener('click',e=>{
+  const pd=e.target.closest('.pd');if(!pd)return;const id=+pd.dataset.id;
+  const f=e.target.closest('.fav');if(f){f.classList.toggle('on');f.classList.contains('on')?S.fav.add(id):S.fav.delete(id);$('#wN').textContent=S.fav.size;$('#wN').classList.toggle('on',S.fav.size>0);toast(f.classList.contains('on')?'Saved to your Wish List':'Removed from your Wish List');return}
+  if(e.target.closest('.ql')){openQV(id);return}
+  const a=e.target.closest('button.add');if(a){addBag(id,1);a.classList.add('ok');const t=a.textContent;a.textContent='Added';setTimeout(()=>{a.classList.remove('ok');a.textContent=t},1500)}
+});
+
+/* cart */
+function addBag(id,q){S.bag.set(id,(S.bag.get(id)||0)+q);paintBag();const b=$('#bagBtn');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');toast('Added to your cart')}
+function paintBag(){let n=0,t=0;S.bag.forEach((q,id)=>{n+=q;t+=q*P[id].p});
+  $('#bN').textContent=n;$('#bN').classList.toggle('on',n>0);$('#bt').textContent=fmt(t);
+  $('#bl').innerHTML=n?[...S.bag].map(([id,q])=>`<div class="bi"><div class="im"><img src="${P[id].img}" alt=""></div><div style="flex:1;min-width:0"><b>${P[id].n}</b><div class="q"><button data-bq="-1" data-id="${id}" aria-label="Decrease">&minus;</button>${q}<button data-bq="1" data-id="${id}" aria-label="Increase">+</button></div><button class="rm" data-rm="${id}">Remove</button></div><div class="pr">${fmt(P[id].p*q)}</div></div>`).join(''):'<div class="be">Your cart is empty.</div>'}
+$('#bl').addEventListener('click',e=>{const q=e.target.closest('[data-bq]'),r=e.target.closest('[data-rm]');if(q){const id=+q.dataset.id,v=(S.bag.get(id)||0)+(+q.dataset.bq);v>0?S.bag.set(id,v):S.bag.delete(id);paintBag()}if(r){S.bag.delete(+r.dataset.rm);paintBag()}});
+paintBag();
+
+function drawer(el,on){el.classList.toggle('on',on);const any=$$('.drw.on').length>0;$('#veil').classList.toggle('on',any);document.body.style.overflow=any?'hidden':''}
+$('#bagBtn').onclick=()=>drawer($('#bag'),true);
+$('#fopen').onclick=()=>drawer($('#fs'),true);
+$('#mmBtn').onclick=()=>drawer($('#mm'),true);
+$('#mm').addEventListener('click',e=>{const a=e.target.closest('[data-mgo]');if(a){e.preventDefault();drawer($('#mm'),false);setCat(a.dataset.mgo);$('#shop').scrollIntoView({behavior:'smooth'})}});
+$('#sOpen').onclick=e=>{e.stopPropagation();const h=$('#hs');h.classList.toggle('mopen');if(h.classList.contains('mopen'))$('#sq').focus();else $('#sdrop').classList.remove('on')};
+$$('[data-x]').forEach(b=>b.addEventListener('click',()=>drawer(b.closest('.drw'),false)));
+$('#veil').onclick=()=>$$('.drw').forEach(d=>drawer(d,false));
+
+/* quick view */
+let qid,qq=1;
+function openQV(id){qid=id;qq=1;const p=P[id];
+  $('#qI').src=p.img;$('#qI').alt=p.n;$('#qB').innerHTML=badges(p);$('#qM').textContent=p.b;$('#qN').textContent=p.n;
+  $('#qP').textContent=p.p==null?'Call for More Information':fmt(p.p);
+  $('#qT').textContent=p.f.includes('Rx Required')?'This product requires a prescription. Please review our Prescription Policy before ordering.':'Questions about this product? Our U.S. based Customer Service team is available Mon - Fri 9am - 5pm EST at 866-763-4363.';
+  $('#qA').innerHTML=(p.p==null?'<a class="btn" href="tel:18667634363">Call 866-763-4363</a>':'<div class="qrow"><div class="qty"><button data-q="-1" aria-label="Decrease">&minus;</button><span id="qn">1</span><button data-q="1" aria-label="Increase">+</button></div><button class="btn" id="qAdd">Add to Cart</button></div>')+`<a class="lk" href="${p.u}">View full product details</a>`;
+  $('#qv').showModal()}
+$('#qA').addEventListener('click',e=>{const q=e.target.closest('[data-q]');if(q){qq=Math.max(1,qq+(+q.dataset.q));$('#qn').textContent=qq}if(e.target.closest('#qAdd')){addBag(qid,qq);$('#qv').close()}});
+$$('[data-dx]').forEach(b=>b.onclick=()=>b.closest('dialog').close());
+$('#qv').addEventListener('click',e=>{if(e.target.id==='qv')e.target.close()});
+
+/* search */
+let hl=0;
+function search(){const q=$('#sq').value.trim().toLowerCase(),d=$('#sdrop');hl=0;
+  const R=q?P.filter(p=>(p.n+' '+p.b).toLowerCase().includes(q)).slice(0,6):[];
+  const mk=s=>q?s.replace(new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>'):s;
+  d.innerHTML=q?(R.length?'<div class="lb">Products</div>'+R.map((p,k)=>`<a href="${p.u}" class="${k?'':'hl'}"><img src="${p.img}" alt=""><span>${mk(p.n)}</span><span class="p">${p.p==null?'':fmt(p.p)}</span></a>`).join(''):'<div class="lb">No results on this page</div>'):'<div class="lb">Categories</div>'+Object.entries(CN).slice(1).map(([k,v])=>`<a href="#shop" data-go="${k}">${v}</a>`).join('');
+  d.classList.add('on')}
+$('#sq').addEventListener('focus',search);$('#sq').addEventListener('input',search);
+$('#sq').addEventListener('keydown',e=>{const a=$$('#sdrop a');if(!a.length)return;if(/Arrow(Up|Down)/.test(e.key)){e.preventDefault();hl=(hl+(e.key==='ArrowDown'?1:-1)+a.length)%a.length;a.forEach((x,k)=>x.classList.toggle('hl',k===hl))}if(e.key==='Enter')a[hl].click()});
+document.addEventListener('click',e=>{if(!e.target.closest('#hs,#sdrop,#sOpen')){$('#sdrop').classList.remove('on');$('#hs').classList.remove('mopen')}});
+addEventListener('keydown',e=>{if(e.key==='Escape'){$$('.drw').forEach(d=>drawer(d,false));$('#sdrop').classList.remove('on')}if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();$('#sq').focus()}});
+
+/* guide */
+$('#guide').innerHTML=GUIDE.map((g,k)=>`<div class="gitem rv" data-c="${['aerosol','suction','oxygen','acc'][k]}"><span class="n">0${k+1}</span><div><h3>${g[0]}</h3><p>${g[2]}</p><a class="lk" href="#shop" data-go="${g[1]}">Shop ${CN[g[1]]} ${ARR}</a></div></div>`).join('');
+
+$$('.rv').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>$('#hdr').classList.toggle('sh',scrollY>40),{passive:true});
+let tt;function toast(m){$('#tT').textContent=m;$('#toast').classList.add('on');clearTimeout(tt);tt=setTimeout(()=>$('#toast').classList.remove('on'),2200)}
+
+paintFilters();render();
+</script>
+</body>
+</html>
