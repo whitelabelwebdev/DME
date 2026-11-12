@@ -756,8 +756,8 @@ const PARTS=[
  ['Cylinder Adjustment Knob','Used to attach the unit to any CGA 870 post-valve cylinder.',89,43,'Right side of the yoke'],
  ['Oxygen Pressure Gauge','Lets you monitor the contents of the compressed oxygen cylinder. Protected by a rubber guard and reads up to 4,000 PSI.',45,34,'Top of the body'],
  ['Selector Switch','Choose your setting, plus OFF and cf 2 or cf 4 (continuous flow). Turn the switch to OFF when not in use.',14,44,'Dial on the left'],
- ['Cylinder Alignment Pins','When assembling the unit, these parallel pins insert into the holes on the CGA 870 post valve.',63,39,'Inside the yoke'],
- ['Seal Washer (Gasket, FR-870G)','Creates the interface between the post valve and the conserver, surrounding the oxygen path in a ring of stainless steel or brass.',63,55,'Inside the yoke']
+ ['Cylinder Alignment Pins','When assembling the unit, these parallel pins insert into the holes on the CGA 870 post valve.',61,37,'Inside the yoke'],
+ ['Seal Washer (Gasket, FR-870G)','Creates the interface between the post valve and the conserver, surrounding the oxygen path in a ring of stainless steel or brass.',70,43,'Inside the yoke']
 ];
 $('#hots').innerHTML=PARTS.map((p,i)=>`<button class="hot" style="left:${p[2]}%;top:${p[3]}%" data-p="${i}" aria-label="${p[0]}">${i+1}</button>`).join('');
 $('#plist').innerHTML=PARTS.map((p,i)=>`<button class="part rv" data-p="${i}"><span class="n">${i+1}</span><span><h3>${p[0]}</h3><p>${p[1]}</p><span class="where">${p[4]}</span></span></button>`).join('');
